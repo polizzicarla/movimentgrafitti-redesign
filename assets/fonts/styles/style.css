@@ -17,6 +17,9 @@
     --box-shadow: 0px 15px 25px #1e1e1e;
     --transition: all 0.5s ease;
 }
+
+
+
 /* reset and helpers */
 body {
     font-family: var(--font-base);
@@ -127,13 +130,13 @@ body {
 
 .btn-dark:hover{
     background-color: var(--c-light);
-    border-color: var(--c-light);
+    border-color: var(--c-dark);
     color: var(--c-dark);
 }
 
 .btn-dark:active{
     background-color: var(--c-light);
-    border-color: var(--c-light);
+    border-color: var(--c-dark);
     color: var(--c-dark);
 }
 
@@ -146,10 +149,11 @@ body {
 
 /* hero section */
 #hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.438)), url(/movimentgrafitti-redesign/assets/images/riot-g3dfc08a90_1920.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.284), rgba(0, 0, 0, 0.251));
     background-position: center;
     background-size: cover;
 }
+
 
 /* section title */
 .section-title {
@@ -170,6 +174,8 @@ body {
     margin-right: auto;
 }
 
+
+
 /* iconsboxes */
 
 .iconbox {
@@ -178,8 +184,20 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: rgba(var(--c-dark), 0.1);
+    background: rgba(var(--c-dark-light), 0.3);
     color: var(--c-brand);
     font-size: 44px;
     flex: none;
+}
+
+.card-overlay {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    );
+  }
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.773);
 }
