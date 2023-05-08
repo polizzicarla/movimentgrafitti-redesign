@@ -270,3 +270,24 @@ footer .line {
     background-color: #bf0000;
     color: #ffffff;
 }
+
+/* contact */
+
+#contact {
+    position: relative;
+    z-index: 2;
+
+}
+#contact::after {
+    content: "";
+    width: 100px;
+    height: 70%;
+    background: linear-gradient(rgba(var(--c-brand, 0.8)), rgba(var(--c-brand,0.8))), url(/movimentgrafitti-redesign/assets/images/team-g4ccf4aa8b_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
