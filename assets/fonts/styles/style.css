@@ -181,4 +181,5 @@ body {
     background: rgba(var(--c-dark), 0.1);
     color: var(--c-brand);
     font-size: 44px;
+    flex: none;
 }
