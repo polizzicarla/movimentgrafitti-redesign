@@ -1,20 +1,10 @@
 
 
 /* imports */
-@font-face{
-    font-family:'Montserrat-Regular.ttf';
-    src: url('../Montserrat-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'MontserratSemiBold';
-    src: url('../Montserrat-SemiBold.ttf');
-}
 
 @import url(../Montserrat-Regular.ttf);
 @import url(../Montserrat-SemiBold.ttf);
-@import url(../Barriecito-Regular.ttf);
-@import url(../Montserrat-Black.ttf);
+@import url(../Montserrat-Bold.ttf);
 
 /* vaiables */
 
@@ -35,9 +25,14 @@ body {
 }
 
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, 
+.h1, .h2, .h3 {
     font-weight: 600;
+    color: var(--c-dark);
+}
+h4, h5, h6,
+.h4, .h5, .h6 {
+    font-weight: 400;
 }
 
 a {
@@ -112,46 +107,78 @@ body {
 }
 
 .btn-imp:active{
-    background-color: #1e1e1e;
-    border-color: #1e1e1e;
-    font-family: 'MontserratSemiBold';
-    color: #ffffff;
+    background-color: var(--c-dark);
+    border-color: var(--c-dark);
+    color: var(--c-light);
 }
 
 .btn-imp:disabled{
-    background-color: #bf0000;
-    border-color: #bf0000;
-    font-family: 'MontserratSemiBold';
-    color: #ffffff;
+    background-color: var(--c-dark-light);
+    border-color: var(--c-dark-light);
+    color: var(--c-dark);
     pointer-events: none
 }
 
 .btn-dark{
-    background-color: #1e1e1e;
-    border-color: #1e1e1e;
-    font-family: 'MontserratSemiBold';
-    color: #ffffff;
+    background-color: var(--c-dark);
+    border-color: var(--c-dark);
+    color: var(--c-light);
 }
 
 .btn-dark:hover{
-    background-color: #ffffff;
-    border-color: #ffffff;
-    font-family: 'MontserratSemiBold';
-    color: #1e1e1e;
+    background-color: var(--c-light);
+    border-color: var(--c-light);
+    color: var(--c-dark);
 }
 
 .btn-dark:active{
-    background-color: #ffffff;
-    border-color: #ffffff;
-    font-family: 'MontserratSemiBold';
-    color: #1e1e1e;
+    background-color: var(--c-light);
+    border-color: var(--c-light);
+    color: var(--c-dark);
 }
 
 .btn-dark:disabled{
-    background-color: #1e1e1e;
-    border-color: #1e1e1e;
-    font-family: 'MontserratSemiBold';
-    color: #ffffff;
+    background-color: var(--c-dark-light);
+    border-color: var(--c-dark-light);
+    color: var(--c-dark);
     pointer-events: none
 }
 
+/* hero section */
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.438)), url(/movimentgrafitti-redesign/assets/images/riot-g3dfc08a90_1920.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* section title */
+.section-title {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.section-title .line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin: 16px auto 24px auto;
+}
+
+.section-title p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* iconsboxes */
+
+.iconbox {
+    width: 60px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--c-dark), 0.1);
+    color: var(--c-brand);
+    font-size: 44px;
+}
