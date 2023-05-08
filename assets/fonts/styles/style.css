@@ -190,6 +190,8 @@ body {
     flex: none;
 }
 
+/* overlays - NOT WORKING */
+
 .card-overlay {
     background:
     linear-gradient(
@@ -200,4 +202,13 @@ body {
 
 .overlay {
     background-color: rgba(0, 0, 0, 0.773);
+}
+
+.carousel-caption {
+    align-items: center;
+    padding-bottom: 200px;
+    line-height: 70px;
+ 
+    
+
 }
