@@ -13,6 +13,7 @@
     --c-brand: #bf0000;
     --c-light: #ffffff;
     --c-dark-light: #6e6c6c;
+    --c-medium: rgb(230, 230, 230);
     --font-base: "Montserrat-Regular.ttf", sans-serif;
     --box-shadow: 0px 15px 25px #1e1e1e;
     --transition: all 0.5s ease;
@@ -54,8 +55,8 @@ img {
 }
 
 .section-padding {
-    padding-top: 50pxpx;
-    padding-bottom: 50px
+    padding-top: 120pxpx;
+    padding-bottom: 120px
 }
 
 /* navbar */
@@ -351,6 +352,12 @@ footer .line {
 
 }
 
+/* join us */
+
+.joinus {
+    padding-top: 120px;
+}
+
 /* ------------OUR MISSION SECTION------------------- */
 
 .hero-section {
@@ -360,7 +367,7 @@ footer .line {
   }
 
   .hero-image {
-    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457)), url(../images/OURACTIONS/OURACTIONSHERO.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457)), url(../images/ourmission/OURACTIONSHERO.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -385,20 +392,10 @@ footer .line {
 
     /* sections with text and images */
 
-    .section-1,
+.section-1,
 .section-2 {
   padding: 50px 0;
   background-color: var(--c-light);
-  text-align: center;
-}
-
-.section-1 h2,
-.section-2 h2 {
-  margin-bottom: 30px;
-}
-
-.section-1 p,
-.section-2 p {
   text-align: left;
 }
 
@@ -409,3 +406,49 @@ footer .line {
   margin-top: 50px;
   max-width: 100%;
 }
+
+    /* counter */
+    .counter {
+        
+        background-color: var(--c-medium);
+      }
+      
+      .counter h2 {
+        font-size: 64px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      
+      .counter p {
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      
+      @media (max-width: 767px) {
+        .counter h2 {
+          font-size: 36px;
+        }
+      
+        .counter p {
+          font-size: 14px;
+        }
+      }
+
+      /* team members */
+      .team-member-content {
+        background-color: var(--c-light);
+        position: absolute;
+        bottom: 24px;
+        left: 50%;
+        width: calc(100% - 50px);
+        transform: translateX(-50%);
+        padding: 24px;
+        transition: var(--transition);
+        opacity: 0;
+      }
+      
+      .team-member:hover .team-member-content {
+        opacity: 1;
+        bottom: 24px;
+      }
