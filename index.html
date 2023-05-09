@@ -7,14 +7,15 @@
     <title>Moviment Graffitti</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/fonts/styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
  <!-- Navibar -->
-  <nav class="navbar navbar-expand-lg bg-white sticky-top">
+  <nav class="navbar navbar-expand-md bg-white sticky-top">
     <div class="container">
-      <a class="navbar-brand img" href="#">
-        <img src="../movimentgrafitti-redesign/assets/images/logo.png">
+      <a class="navbar-brand img" href="../movimentgrafitti-redesign/index.html">
+        <img src="./assets/images/logo.png">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,36 +24,36 @@
         <ul class="navbar-nav ms-auto">
 
           <li class="nav-item body">
-            <a class="nav-link" href="#ouractions">Our Actions</a>
+            <a class="nav-link" href="./ouractions.html">Our Actions</a>
           </li>
           <li class="nav-item body">
-            <a class="nav-link" href="#ourmission">Our Mission</a>
+            <a class="nav-link" href="./ourmission.html">Our Mission</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#news">News</a>
+            <a class="nav-link" href="./news.html">News</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#events">Events</a>
+            <a class="nav-link" href="./events.html">Events</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#joinus">Join Us</a>
+            <a class="nav-link" href="./joinus.html">Join Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="./contact.html">Contact</a>
           </li>
         
         </ul>
-        <a href="#" class=" btn btn-imp ms-lg-3">Donate</a>
+        <a href="./donate.html" class=" btn btn-imp ms-lg-3">Donate</a>
       </div>
     </div>
   </nav>
 
   <!-- hero -->
-  <section id="hero" class="min-vh-100 d-flex pt-4 mb-3 align-items-center text-center" style="background-image: url(../movimentgrafitti-redesign/assets/images/enough.jpg);" >
+  <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1 class="text-uppercase text-white fw-bold display-1">This is our latest action</h1>
+          <h1 class="text-uppercase text-white fw-bold display-1">Most recent story and or news</h1>
           <h5 class="text-white mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
           <div>
             <a href="#" class="btn btn-imp">Learn More</a>
@@ -78,7 +79,7 @@
         </div>
         <div class="row justify-content-between align-items-center">
         <div class="col-lg-6">
-          <img src="../movimentgrafitti-redesign/assets/images/sam-ladley-2hM5_1i2k3U-unsplash.jpg" alt="">
+          <img src="./assets/images/sam-ladley-2hM5_1i2k3U-unsplash.jpg" alt="">
         </div>
         <div class="col-lg-5">
         <h1 class="mt-3">About our work</h1>
@@ -110,6 +111,9 @@
             <p class="mt-3 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nesciunt aspernatur quo obcaecati odit.</p>
         </div>
         </div>
+        <div class="align-items-center justify-content-center">
+          <a href="./ourmission.html"> <button class="btn btn-dark mt-3 mb-4">Learn More</button></a>
+        </div>
         </div>  
         
       </div>
@@ -118,111 +122,56 @@
     </div>
   </section>
 
-<!-- our actions -->
-  <section id="ouractions" class="section-padding">
-    <div class="container align-items-top">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title">
-            <h1 class="display-4 fw-bold text-center">Our Actions</h1>
-            <div class="line"></div>
-            <div class="row align-items-center">
-            <div class="col-md-8">
-               <div class="card-overlay">
-                <div class="card text-bg-dark align-items-left text-left oeverlay">
-                  <img src="../movimentgrafitti-redesign/assets/images/gardening.jpg" class="card-img overlays" alt="...">
-                  <div class="card-img-overlay align-items-center">
-                    <h3 class="card-title ms-4 pt-lg-5 mt-3 me-5 display-2 fw-bold text-white text-uppercase">Lorem ipsum dolor sit.</h3>
-                    <p class="card-text ms-3 mt-3 text-white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <button class="btn btn-imp ms-3 mt-3">Read more</button>
-                  </div>
-                </div>
-              </div> 
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h3>Card title</h3>
-                    <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <button class="btn btn-dark">Read more</button>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h3>Card title</h3>
-                    <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <button class="btn btn-dark">Read more</button>
-                  </div>
-                </div>
-            </div>
-            </div>
-          </div>
-  </section>
-
-  <!-- events -->
-  <section id="events" class="section-padding">
-    <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../movimentgrafitti-redesign/assets/images/volunteer-gcc5a6ace0_1920.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption justify-content-between align-items-center text-center">
-            <h3 class="text-white text-uppercase" style="font-size: 80px;">First slide label</h3>
-            <h5 class="text-white">Some representative placeholder content for the first slide.</h5>
-            <button class="btn btn-dark">Read more</button>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="../movimentgrafitti-redesign/assets/images/feminists-gf04fdf81f_1920.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption justify-content-between align-items-center text-center">
-            <h3 class="text-white text-uppercase" style="font-size: 80px;">First slide label</h3>
-            <h5 class="text-white">Some representative placeholder content for the first slide.</h5>
-            <button class="btn btn-dark">Read more</button>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="../movimentgrafitti-redesign/assets/images/protest-g0ae852213_1920.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption justify-content-between align-items-center text-center">
-            <h3 class="text-white text-uppercase" style="font-size: 80px;">First slide label</h3>
-            <h5 class="text-white">Some representative placeholder content for the first slide.</h5>
-            <button class="btn btn-dark">Read more</button>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-
-  </section>
-
-  <!-- join us -->
-  <section id="joinus" class="section-padding">
-    <div class="container align-items-top pt-lg-5 pb-lg-5">
-      <div class="row">
-        <div class="col-lg-7 align-items-left">
-          <h2 style="font-size: 60px;">Join us!</h2>
+  <!-- our actions-->
+<section id="ouractions" class="section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="section-title">
+          <h1 class="display-4 fw-bold text-center">Our Actions</h1>
           <div class="line"></div>
-          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ut. Omnis nostrum, commodi cupiditate voluptatum fuga ratione! Et, pariatur rem?</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, consequatur!</p>
         </div>
-        <div class="col-lg-4 align-items-center">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae ipsa pariatur quasi harum at eligendi odio, nesciunt dignissimos praesentium voluptatem provident aliquid tenetur sequi mollitia eveniet qui, quis numquam id ex corrupti. Quasi, distinctio. Minus asperiores officiis nesciunt similique laboriosam!</p>
-          <button class="btn btn-imp">Join us</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="ouractions-post image-zoom">
+          <div class="image-zoom-wrapper">
+            <img src="../movimentgrafitti-redesign/assets/images/changing-choosing.jpg" alt="">
+            <h5 class="mt-4">Lorem ipsum dolor sit.</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam in rerum quasi voluptate. Itaque, harum?</p>
+            <a href="#">Read More</a>
+          </div>
         </div>
-
+      </div>
+      <div class="col-md-4">
+        <div class="ouractions-post image-zoom">
+          <div class="image-zoom-wrapper">
+            <img src="./assets/images/riot-g3dfc08a90_1920.jpg" alt="">
+            <h5 class="mt-4">Lorem ipsum dolor sit.</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam in rerum quasi voluptate. Itaque, harum?</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="ouractions-post image-zoom">
+          <div class="image-zoom-wrapper">
+            <img src="./assets/images/gardening.jpg" alt="">
+            <h5 class="mt-4">Lorem ipsum dolor sit.</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam in rerum quasi voluptate. Itaque, harum?</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
       </div>
 
     </div>
-
-  </section>
+  </div>
+</section>
 
   <!-- contact -->
-  <section class="section-padding bg-dark" id="contact">
+  <section class="section-padding" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -230,39 +179,252 @@
             <h1 class="display-4 text-white fw-bold">Contact Us</h1>
             <div class="line bg-white"></div>
             <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque est molestiae quos veritatis cum qui.</p>
-
-
           </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form action="#" class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
+            <div class="form-group col-lg-6">
+              <input type="text" class="form-control" placeholder="Enter first name">
+            </div>
+            <div class="form-group col-lg-6">
+              <input type="text" class="form-control" placeholder="Enter second name">
+            </div>
+            <div class="form-group col-lg-12">
+              <input type="email" class="form-control" placeholder="Enter e-mail address">
+            </div>
+            <div class="form-group col-lg-12">
+              <input type="text" class="form-control" placeholder="Enter subject">
+            </div>
+            <div class="form-group col-lg-12">
+              <textarea name="message" id="" cols="" rows="5" class="form-control" placeholder="Enter message"></textarea>
+            </div>
+            <div class="form-group col-lg-12 d-grid">
+             <button class="btn btn-imp">Send Message</button>
+            </div>
+          </form>
 
         </div>
 
       </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-8"></div>
-          <form action="#" class="row g-3">
-          <div class="form-group col-lg-6">
-            <input type="text" class="form-control" placeholder="Enter first name">
-          </div>
-          <div class="form-group col-lg-6">
-            <input type="text" class="form-control" placeholder="Enter last name">
-          </div>
-          <div class="form-group col-lg-12">
-            <input type="email" class="form-control" placeholder="Enter e-mail address">
-          </div>
-          <div class="form-group col-lg-12">
-            <input type="text" class="form-control" placeholder="Enter subject">
-          </div>
-          <div class="form-group col-lg-12">
-            <textarea name="message" id="" cols="30" rows="5" class="form-control" placeholder="Enter message"></textarea>
-          </div>
-          <div class="form-group col-lg-12 d-grid">
-            <button class="btn btn-imp">Send Message</button>
-          </div>
-        </form>
+    </div>
+  </section>
+
+ <!-- events -->
+ <section id="events" class="section-padding">
+  <div class="container-fluid px-0">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="section-title">
+          <h1 class="display-4 fw-bold">Events</h1>
+          <div class="line"></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit neque et dolorem expedita.</p>
+          <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/images/volunteer-gcc5a6ace0_1920.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption justify-content-between align-items-center text-center">
+          <h3 class="text-white text-uppercase" style="font-size: 80px;">First slide label</h3>
+          <h5 class="text-white">Some representative placeholder content for the first slide.</h5>
+          <button class="btn btn-dark">Read more</button>
         </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/images/gardening-closeup.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption justify-content-between align-items-center text-center">
+          <h3 class="text-white text-uppercase" style="font-size: 80px;">First slide label</h3>
+          <h5 class="text-white">Some representative placeholder content for the first slide.</h5>
+          <button class="btn btn-dark">Read more</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/images/mission.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption justify-content-between align-items-center text-center">
+          <h3 class="text-white text-uppercase" style="font-size: 80px;">First slide label</h3>
+          <h5 class="text-white">Some representative placeholder content for the first slide.</h5>
+          <button class="btn btn-dark">Read more</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- testimonials this sections wasnt thought of but it makes sense to add to give a more familiar feel-->
+<section id="reviews" class="section-padding bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="section-title">
+          <h1 class="display-4 fw-bold">Testimonials</h1>
+          <div class="line"></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit neque et dolorem expedita.</p>
+        </div>
+      </div>
+    </div>
+      <div class="row gy-4 g-4">
+        <div class="col-lg-4 col-sm-6">
+          <div class="review">
+            <div class="review-head p-4 bg-white theme-shadow">
+              <div class="text-warning">
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+              </div>
+              <p>Great ipsum dolor, sit amet consectetur adipisicing elit. Facere in libero culpa! Sint, fugit assumenda?</p>
+            </div>
+            <div class="review-person mt-4 d-flex align-items-center">
+              <img class="rounded-circle" style="width: 100px; height: 100px;" src="./assets/images/person1.jpg" alt="">
+              <div class="ms-3">
+                <h5>Angela Ngozi</h5>
+                <small>Donor & founder of ABC</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="review">
+            <div class="review-head p-4 bg-white theme-shadow">
+              <div class="text-warning">
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+              </div>
+              <p>Great ipsum dolor, sit amet consectetur adipisicing elit. Facere in libero culpa! Sint, fugit assumenda?</p>
+            </div>
+            <div class="review-person mt-4 d-flex align-items-center">
+              <img class="rounded-circle" style="width: 100px; height: 100px;" src="./assets/images/person2.jpg" alt="">
+              <div class="ms-3">
+                <h5>Tempie Brennan</h5>
+                <small>Volunteer</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="review">
+            <div class="review-head p-4 bg-white theme-shadow">
+              <div class="text-warning">
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+              </div>
+              <p>Great ipsum dolor, sit amet consectetur adipisicing elit. Facere in libero culpa! Sint, fugit assumenda?</p>
+            </div>
+            <div class="review-person mt-4 d-flex align-items-center">
+              <img class="rounded-circle" style="width: 100px; height: 100px;" src="./assets/images/person3.jpg" alt="">
+              <div class="ms-3">
+                <h5>Jack Booth</h5>
+                <small>Supporter</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="review">
+            <div class="review-head p-4 bg-white theme-shadow">
+              <div class="text-warning">
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+              </div>
+              <p>Great ipsum dolor, sit amet consectetur adipisicing elit. Facere in libero culpa! Sint, fugit assumenda?</p>
+            </div>
+            <div class="review-person mt-4 d-flex align-items-center">
+              <img class="rounded-circle" style="width: 100px; height: 100px;" src="./assets/images/person4.jpg" alt="">
+              <div class="ms-3">
+                <h5>Yi Chan</h5>
+                <small>Consultant</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="review">
+            <div class="review-head p-4 bg-white theme-shadow">
+              <div class="text-warning">
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+              </div>
+              <p>Great ipsum dolor, sit amet consectetur adipisicing elit. Facere in libero culpa! Sint, fugit assumenda?</p>
+            </div>
+            <div class="review-person mt-4 d-flex align-items-center">
+              <img class="rounded-circle" style="width: 100px; height: 100px;" src="./assets/images/person5.jpg" alt="">
+              <div class="ms-3">
+                <h5>Jack Jones</h5>
+                <small>Supporter</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="review">
+            <div class="review-head p-4 bg-white theme-shadow">
+              <div class="text-warning">
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+                <i class="ri-heart-fill"></i>
+              </div>
+              <p>Great ipsum dolor, sit amet consectetur adipisicing elit. Facere in libero culpa! Sint, fugit assumenda?</p>
+            </div>
+            <div class="review-person mt-4 d-flex align-items-center">
+              <img class="rounded-circle" style="width: 100px; height: 100px;" src="./assets/images/person6.jpg" alt="">
+              <div class="ms-3">
+                <h5>Mae Bucket</h5>
+                <small>Supporter</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- join us -->
+<section id="joinus" class="section-padding">
+  <div class="container align-items-top pt-lg-5 pb-lg-5">
+    <div class="row">
+      <div class="col-lg-7 align-items-left">
+        <h2 style="font-size: 60px;">Join us!</h2>
+        <div class="line"></div>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ut. Omnis nostrum, commodi cupiditate voluptatum fuga ratione! Et, pariatur rem?</h4>
+      </div>
+      <div class="col-lg-4 align-items-center">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae ipsa pariatur quasi harum at eligendi odio, nesciunt dignissimos praesentium voluptatem provident aliquid tenetur sequi mollitia eveniet qui, quis numquam id ex corrupti. Quasi, distinctio. Minus asperiores officiis nesciunt similique laboriosam!</p>
+        <button class="btn btn-imp">Join us</button>
+      </div>
+
     </div>
 
-  </section>
+  </div>
+
+</section>
 
  <!-- footer -->
  <footer class="bg-dark">
@@ -310,7 +472,6 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur autem quam pariatur officia esse non.</p>
               <label for="exampleInputEmail1" class="form-label">Email address</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <button type="submit" class="btn btn-imp">Subscribe</button>
           </form>
@@ -339,5 +500,6 @@
  </footer>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-</body>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    </body>
 </html>
