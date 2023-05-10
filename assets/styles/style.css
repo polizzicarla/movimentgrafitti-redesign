@@ -161,8 +161,8 @@ img {
 
 /* section title */
 .section-title {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /* centered */
@@ -199,6 +199,16 @@ img {
     color: var(--c-brand);
     font-size: 44px;
     flex: none;
+}
+/* iconbox event */
+.iconbox-2 {
+
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--c-dark-light), 0.3);
+    color: var(--c-brand);
+    font-size: 30px;
+    
 }
 
 /* overlays - NOT WORKING */
@@ -608,6 +618,81 @@ footer .line {
         font-size: 4rem;
       }
 
+/* ------------news------------------- */
+
+/* current news */
+.news-section {
+    position: relative;
+    height: 500px;
+    margin-bottom: 50px;
+  }
+
+  .news-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457)), url(../images/news/chalkboard-g7f37e199c_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+
+.news-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--c-light);
+  }
+  
+  .news-text h1 {
+    font-size: 4rem;
+  }
+
+  .news-text h1 {
+    font-size: 4rem;
+  }
+
+  .newspost {
+    border-color: #1e1e1e;
+    text-align: center;
+    margin: 10px;
+  }
+
+  /* ----------------events-------------------- */
+  .events-section {
+    position: relative;
+    height: 500px;
+    margin-bottom: 50px;
+  }
+
+  .events-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457)), url(../images/events/headway-F2KRf_QfCqw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+
+    .events-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--c-light);
+  }
+  
+  .events-text h1 {
+    font-size: 4rem;
+  }
+
+  .events-text h1 {
+    font-size: 4rem;
+  }
+
+  .eventspost {
+    border-color: #1e1e1e;
+    text-align: center;
+    margin: 10px;
+  }
     /* -----contact page */
     #contactpage {
         position: relative;
