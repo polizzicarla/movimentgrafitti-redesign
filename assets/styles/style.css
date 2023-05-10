@@ -152,7 +152,7 @@ body {
 
 /* hero section */
 #hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457)), url(../images/enough.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457)), url(../images/riot-g3dfc08a90_1920.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -502,7 +502,7 @@ footer .line {
         text-align: center;
         margin: 10px;
         display: none;
-        padding: 10px;
+        padding: 10px;  
       }
 
       .btn-filter {

@@ -31,6 +31,8 @@ $(document).ready(function() {
 
 });
 
+//filter function not working //
+ 
 function filterObject(c) {
   var x, i;
   x =document.getElementsByClassName("actionpost");
