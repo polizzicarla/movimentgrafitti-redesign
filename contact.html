@@ -4,63 +4,212 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>News</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-<!-- navbar -->
-  
-<!-- content -->
-  <!-- contact js-->
-  <section class="section-padding" id="contactpage">
+   <!-- Navibar -->
+   <nav class="navbar navbar-expand-md bg-white sticky-top">
     <div class="container">
-      <div class="row">
-        <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
-          <div class="section-title">
-            <h1 class="display-4 text-white fw-bold">Contact Us</h1>
-            <div class="line bg-white"></div>
-            <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque est molestiae quos veritatis cum qui.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="250">
-        <div class="col-lg-8">
-          <form action="#" class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
-            <div class="form-group col-lg-6">
-              <input type="text" class="form-control" placeholder="Enter first name">
-            </div>
-            <div class="form-group col-lg-6">
-              <input type="text" class="form-control" placeholder="Enter second name">
-            </div>
-            <div class="form-group col-lg-12">
-              <input type="email" class="form-control" placeholder="Enter e-mail address">
-            </div>
-            <div class="form-group col-lg-12">
-              <input type="text" class="form-control" placeholder="Enter subject">
-            </div>
-            <div class="form-group col-lg-12">
-              <textarea name="message" id="" cols="" rows="5" class="form-control" placeholder="Enter message"></textarea>
-            </div>
-            <div class="form-group col-lg-12 d-grid">
-             <button class="btn btn-imp">Send Message</button>
-            </div>
-          </form>
+      <a class="navbar-brand img" href="../movimentgrafitti-redesign/index.html">
+        <img src="./assets/images/logo.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
 
-        </div>
-
+          <li class="nav-item body">
+            <a class="nav-link" href="./ouractions.html">Our Actions</a>
+          </li>
+          <li class="nav-item body">
+            <a class="nav-link" href="./ourmission.html">Our Mission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./joinus.html">Join Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="./donate.html" class=" btn btn-imp ms-lg-3">Donate</a>
+          </li>
+          <li class="nav-item">
+            <div class="list list-right">
+              <button class="btn place-items-center ms-4" id="theme-toggle-btn">
+                <i class="ri-sun-fill sun-icon"></i>
+                <i class="ri-moon-fill moon-icon"></i>
+              </button>
+            </div>
+          </li>
+        </ul>
+        
       </div>
     </div>
-  </section>
+      
+  </nav>
+
+<!-- HERO -->
+<section class="hero-section-2">
+  <div class="hero-image-2"></div>
+  <div class="hero-text-2">
+    <h1 data-aos="fade-left" class="text-white">CONTACT US</h1>
+    <p data-aos="fade-right" class="text-white">We are dedicated to...</p>
+  </div>
+</section>
+  <!-- contact js-->
+ <section>
+
+  <div class="row justify-content-center">
+    <div class="col-12 text-center">
+      <div class="section-title">
+        <h1 class="display-4 fw-bold">Get in touch</h1>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati laborum molestias quia sequi, suscipit quae accusamus exercitationem quam accusantium inventore repellendus?</p>
+      </div>
+    </div>
+    <div class="col-lg-8">
+      <form action="#" class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
+        <div class="form-group col-lg-12">
+          <label for="name">First Name</label>
+          <input type="text" class="form-control" placeholder="Enter your first name">
+        </div>
+        <div class="form-group col-lg-12">
+          <label for="surname">Second Name</label>
+          <input type="text" class="form-control" placeholder="Enter your second name">
+        </div>
+        <div class="form-group col-lg-12">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" placeholder="Enter your e-mail address">
+        </div>
+        <div class="form-group col-lg-12">
+          <label for="subject">Subject</label>
+          <input type="text" class="form-control" placeholder="Enter subject">
+        </div>
+        <div class="form-group col-lg-12">
+          <label for="message">Enter Message</label>
+          <textarea name="message" id="" cols="" rows="5" class="form-control" placeholder="Enter message"></textarea>
+        </div>
+        <div class="form-group col-lg-12 d-grid">
+         <button class="btn btn-imp">Send Message</button>
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+ </section>
+<!-- further details -->
+ <section>
+  <div class="container background-color-img pt-lg-5 p-lg-5">
+    <div class="row ">
+      <div class="col-lg-6 ">
+        <h2 class="text-white fw-bold">Further Details</h2>
+        <div class="line"></div>
+    </div>
+    <div>
+      <ul class="text-white">
+        <li>Email: info@movimentgraffitti.org</li>
+        <li>Tel: +356 0000000</li>
+        <li>Address: 20, Triq il-Liberta, Malta</li>
+      </ul>
+    </div>
+  </div>
+ </section>
+
+ <!-- footer -->
+ <footer class="bg-dark">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-auto">
+          <a href="#"><img src="../movimentgrafitti-redesign/assets/images/logo-light.png" alt="" style="width: 120px;"></a>
+          <div class="line"></div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet incidunt ipsum laudantium blanditiis, veniam voluptas.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <h5 class="text-white fw-bold">REPORTS</h5>
+          <div class="line"></div>
+          <ul>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Cookies Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Imprint</a></li>
+            <li><a href="#">Annual Report</a></li>
+          </ul>
+          </div>
+        <div class="col-lg-4">
+          <h5 class="text-white fw-bold">CONTACT</h5>
+          <div class="line"></div>
+          <ul>
+            <li>Email: info@movimentgraffitti.org</li>
+            <li>Tel: +356 0000000</li>
+            <li>Address: 20, Triq il-Liberta, Malta</li>
+          </ul>
+        </div>
+          <div class="col-lg-4">
+            <ul>
+        <form class="gy-4 text-white">
+          <div>
+            <h4 class="fw-bold">SUBSCRIBE TO OUR NEWSLETTER!</h4>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur autem quam pariatur officia esse non.</p>
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+            <button type="submit" class="btn btn-imp mt-4">Subscribe</button>
+        </form>
+      </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-auto">
+            <div class="social-icons">
+              <a href=""><i class="ri-twitter-fill"></i></a>
+              <a href=""><i class="ri-facebook-fill"></i></a>
+              <a href=""><i class="ri-instagram-fill"></i></a>
+              <a href=""><i class="ri-linkedin-fill"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <div class="col-auto">
+          <p class="mb-0">Copyright Moviment Graffitti. All Rights Reserved</p>
+        </div>
+
+        </div>
+        <div class="col-auto">
+          <p class="mb-0">Designed by <a href="#">Carla Polizzi</a></p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</footer>
 
 
 
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  </body>
-</html>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+   AOS.init();
+ </script>
+ </body>
+ </html>

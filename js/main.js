@@ -22,6 +22,7 @@ AOS.init({
 
 });
 
+//counter
 $(document).ready(function() {
 
   $('.count').counterUp({
@@ -31,3 +32,60 @@ $(document).ready(function() {
 
 });
 
+// donation form validation
+document.getElementById("donation-form").addEventListener("submit", function (event) {
+  event.preventDefault();
+  
+  // Perform client-side form validation
+  if (!validateForm()) {
+    return;
+  }
+
+  // Simulate payment processing
+  simulatePaymentProcessing();
+});
+
+function validateForm() {
+  var amount = document.getElementById("amount").value;
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var card = document.getElementById("card").value;
+  var expiry = document.getElementById("expiry").value;
+  var cvv = document.getElementById("cvv").value;
+  var isValid = true;
+}
+
+  // Validate donation amount
+  if (isNaN(amount) || amount <= 0) {
+    displayErrorMessage("Please enter a valid donation amount");
+    isValid = false;
+  }
+
+  // Validate name
+  if (name.trim() === "") {
+    displayErrorMessage("Please enter your name");
+    isValid = false;
+  }
+
+  // Validate email
+  if (!isValidEmail(email)) {
+    displayErrorMessage("Please enter a valid email address");
+    isValid = false;
+  }
+
+  // Validate credit card details
+  if (!isValidCreditCard(card)) {
+    displayErrorMessage("Please enter a valid credit card number");
+    isValid = false;
+  }
+
+  // Validate expiry date
+  if (!isValidExpiryDate(expiry)) {
+    displayErrorMessage("Please enter a valid expiration date (MM/YY)");
+    isValid = false;
+  }
+
+  // Validate CVV
+  if (!isValidCVV(cvv)) {
+    displayErrorMessage("Please enter a valid CVV");
+  }

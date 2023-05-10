@@ -693,6 +693,22 @@ footer .line {
     text-align: center;
     margin: 10px;
   }
+
+/* ----------join us------------- */
+
+.hero-joinus-section {
+    box-sizing: inherit;
+  }
+
+.hero-joinus-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457)), url(../images/joinus.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: block;
+}
+
+
     /* -----contact page */
     #contactpage {
         position: relative;
@@ -721,3 +737,69 @@ footer .line {
         box-shadow: none;
         border-color: var(--c-brand);
     }
+    /* further details */
+    .btn-filter:active
+
+    /* donate page */
+    .hero-section-donation {
+        box-sizing: inherit;
+      }
+    
+    .hero-image-donation {
+        position: relative;
+        background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457)), url(../images/donate.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+        display: block;
+    
+    }
+    
+    .hero-text-donation {
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--c-light);
+    }
+
+    .donation-form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: var(--c-medium);
+      }
+      
+      .form-title {
+        text-align: center;
+        
+        margin-bottom: 20px;
+      }
+      
+      .form-group {
+        margin-bottom: 15px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .error-message {
+        color: red;
+        margin-top: 5px;
+      }
+
+      .background-color-img {
+        position: relative;
+        background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457)), url(../images/team-g4ccf4aa8b_1920.jpg);
+        background-position: center;
+        background-size: cover;
+        box-sizing: inherit;
+      }
+
+   
