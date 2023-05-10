@@ -59,6 +59,9 @@ img {
     padding-bottom: 120px
 }
 
+/* dark mode */
+
+
 /* navbar */
 
 .navbar {
@@ -452,3 +455,71 @@ footer .line {
         opacity: 1;
         bottom: 24px;
       }
+
+      /* -------------OUR ACTIONS PAGE--------------- */
+
+      .hero-section-2 {
+        position: relative;
+        height: 500px;
+        margin-bottom: 50px;
+      }
+    
+      .hero-image-2 {
+        background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457)), url(../images/ouractions/enough.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+      }
+      
+      .hero-text-2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: var(--c-light);
+      }
+      
+      .hero-text-2 h1 {
+        font-size: 4rem;
+      }
+    
+      .hero-text-2 h1 {
+        font-size: 4rem;
+      }
+
+      /* posts and filters */
+      .actionpost {
+        border-color: #1e1e1e;
+        text-align: center;
+        margin: 10px;
+      }
+
+      .filter {
+        float: left;
+        width: 125px;
+        line-height: 125px;
+        text-align: center;
+        margin: 10px;
+        display: none;
+        padding: 10px;
+      }
+
+      .btn-filter {
+        background-color: var(--c-light);
+        border-color: var(--c-dark);
+        color: var(--c-dark);
+      }
+
+      .btn-filter:hover{
+        background-color: var(--c-dark);
+        border-color: var(--c-dark);
+        color: var(--c-light);
+    }
+    
+    .btn-filter:active{
+        background-color: var(--c-dark);
+        border-color: var(--c-dark);
+        color: var(--c-light);
+    }
+    
