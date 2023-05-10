@@ -165,11 +165,19 @@ img {
     margin-bottom: 60px;
 }
 
+/* centered */
 .section-title .line {
     width: 60px;
     height: 4px;
     background-color: var(--c-brand);
     margin: 16px auto 24px auto;
+}
+/* left aligned */
+.section-title .line-left {
+    width: 160px;
+    height: 4px;
+    background-color: var(--c-brand);
+    
 }
 
 .section-title p {
@@ -523,7 +531,82 @@ footer .line {
         border-color: var(--c-dark);
         color: var(--c-light);
     }
+        /* featured action post */
+    .action-post {
+        position: relative;
+        height: 500px;
+        margin-bottom: 50px;
+      }
     
+      .action-image {
+        background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457)), url(../images/ouractions/FEMINISMEVENT.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+      }
+      
+      .action-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: var(--c-light);
+      }
+      
+      .action-text h1 {
+        font-size: 4rem;
+      }
+    
+      .action-text h1 {
+        font-size: 4rem;
+      }
+
+      /* progressbar */
+
+      .progress {
+        background-color: var(--c-medium);
+        box-shadow: #1e1e1e;
+        size-adjust: 10px;
+      }
+
+      .progress-bar {
+        background-color: var(--c-brand);
+        box-shadow: #1e1e1e;
+
+      }
+    
+      /* otherways to help */
+
+      .other-ways-section {
+        position: relative;
+        height: 500px;
+        margin-bottom: 50px;
+      }
+
+      .other-ways-image {
+        background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457)), url(../images/ourmission/OURACTIONSHERO.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+      }
+
+      .other-ways-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: var(--c-light);
+      }
+
+      .other-ways-text h1 {
+        font-size: 4rem;
+      }
+    
+      .other-ways-text h1 {
+        font-size: 4rem;
+      }
 
     /* -----contact page */
     #contactpage {
