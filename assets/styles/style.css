@@ -802,4 +802,6 @@ footer .line {
         box-sizing: inherit;
       }
 
-   
+   li {
+    text-decoration: none;
+   }
