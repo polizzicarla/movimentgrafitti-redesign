@@ -6,6 +6,8 @@
 @import url(../fonts/Montserrat-Bold.ttf);
 @import url(../fonts/Montserrat-SemiBold.ttf);
 
+
+
 /* vaiables */
 
 :root {
@@ -282,6 +284,66 @@ footer .line {
     color: #ffffff;
 }
 
+/* featured action post homepage */
+.featured-articles {
+    padding-block: 10px;
+
+
+}
+
+.section-header-offset {
+    margin-top: 7.4rem;
+
+}
+
+
+.headline-banner {
+    display: flex;
+    align-items: center;
+    box-sizing: inherit;
+
+}
+
+.headline-banner-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457)), url(../images/ouractions/FEMINISMEVENT.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+.headline {
+    color:var(--c-dark-light);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 4rem;
+    height: 100%;
+    color: #ffffff;
+}
+
+.headline span {
+    height: inherit;
+}
+
+.headline-description {
+    text-align: left;
+    color: #ffffff;
+}
+
+.article {
+    position: relative;
+    min-height: min-content;
+
+}
+
+.article-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .25s;
+}
+
+
+
 /* contact */
 
 #contact {
@@ -541,7 +603,7 @@ footer .line {
         border-color: var(--c-dark);
         color: var(--c-light);
     }
-        /* featured action post */
+        
     .action-post {
         position: relative;
         height: 500px;
@@ -571,6 +633,9 @@ footer .line {
       .action-text h1 {
         font-size: 4rem;
       }
+
+      /* featured posts on homepage */
+
 
       /* progressbar */
 
@@ -684,9 +749,7 @@ footer .line {
     font-size: 4rem;
   }
 
-  .events-text h1 {
-    font-size: 4rem;
-  }
+
 
   .eventspost {
     border-color: #1e1e1e;
@@ -696,16 +759,26 @@ footer .line {
 
 /* ----------join us------------- */
 
-.hero-joinus-section {
+.hero-section-joinus {
     box-sizing: inherit;
   }
 
-.hero-joinus-image {
-    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457)), url(../images/joinus.jpg);
+.hero-image-joinus {
+    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457)), url(../images/team.jpg);
     background-position: center;
     background-size: cover;
     height: 500px;
     display: block;
+}
+
+.hero-text-joinus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--c-light);
+
 }
 
 
