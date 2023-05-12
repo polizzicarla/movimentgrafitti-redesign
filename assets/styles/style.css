@@ -1,15 +1,11 @@
 
 
 /* imports */
-
 @import url(../fonts/Montserrat-Regular.ttf);
 @import url(../fonts/Montserrat-Bold.ttf);
 @import url(../fonts/Montserrat-SemiBold.ttf);
 
-
-
 /* vaiables */
-
 :root {
     --c-dark: #1e1e1e;
     --c-brand: #bf0000;
@@ -21,8 +17,6 @@
     --transition: all 0.5s ease;
 }
 
-
-
 /* reset and helpers */
 body {
     font-family: var(--font-base);
@@ -30,12 +24,12 @@ body {
     color: var(--c-dark);
 }
 
-
 h1, h2, h3, 
 .h1, .h2, .h3 {
     font-weight: 600;
     color: var(--c-dark);
 }
+
 h4, h5, h6,
 .h4, .h5, .h6 {
     font-weight: 400;
@@ -61,11 +55,18 @@ img {
     padding-bottom: 120px
 }
 
+.bg-dark {
+    color: var(--c-dark);
+}
+
+.theme-shadow {
+    box-shadow: var(--c-dark);
+}
+
 /* dark mode */
 
 
 /* navbar */
-
 .navbar {
     box-shadow: var(--c-dark-light);
 }
@@ -76,10 +77,10 @@ img {
 .navbar-nav .nav-link.active {
     color: var(--c-brand);
 }
-  .navbar .navbar-brand {
+.navbar .navbar-brand {
     padding-top: 0px;
   }
-  .navbar .navbar-brand img {
+.navbar .navbar-brand img {
     height: 50px;
 }
 .collapse {
@@ -92,7 +93,6 @@ img {
 .navbar-toggler-icon {
     background-image: url(../images/menu-line.svg);
 }
-
 
 /* buttons */
 .btn{
@@ -153,13 +153,21 @@ img {
     pointer-events: none
 }
 
+.btn-filter {
+    font-weight: 400;
+    font-size: 11px;
+    text-transform: uppercase;
+    border-radius: 100px;
+
+   
+}
+
 /* hero section */
 #hero {
     background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457)), url(../images/riot-g3dfc08a90_1920.jpg);
     background-position: center;
     background-size: cover;
 }
-
 
 /* section title */
 .section-title {
@@ -190,7 +198,6 @@ img {
 
 
 /* iconsboxes */
-
 .iconbox {
     width: 60px;
     height: 70px;
@@ -204,32 +211,11 @@ img {
 }
 /* iconbox event */
 .iconbox-2 {
-
     align-items: center;
     justify-content: center;
     background: rgba(var(--c-dark-light), 0.3);
     color: var(--c-brand);
     font-size: 30px;
-    
-}
-
-/* overlays - NOT WORKING */
-
-.card-overlay {
-    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457));
-  }
-
-.overlay {
-    background-color: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457));
-}
-
-
-.bg-dark {
-    color: var(--c-dark);
-}
-
-.theme-shadow {
-    box-shadow: var(--c-dark);
 }
 
 /* footer */
@@ -268,7 +254,6 @@ footer .line {
 }
 
 /* social icons */
-
 .social-icons a {
     width: 40px;
     height: 40px;
@@ -285,23 +270,45 @@ footer .line {
 }
 
 /* featured action post homepage */
-.featured-articles {
-    padding-block: 10px;
+.action {
+    position: relative;
 
+} 
 
+.actions-image {
+    position: relative;
+   
+    object-fit: cover;
 }
+.action-post {
+    position: relative;
+    height: 500px;
+    margin-bottom: 50px;
+    padding-block: 10px;
+  }
+
+  .action-text {
+    position: relative;
+    text-align: center;
+    color: var(--c-light);
+  }
+  
+  .action-text h1 {
+    font-size: 4rem;
+  }
+
+  .action-text h1 {
+    font-size: 4rem;
+  }
 
 .section-header-offset {
     margin-top: 7.4rem;
-
 }
-
 
 .headline-banner {
     display: flex;
     align-items: center;
     box-sizing: inherit;
-
 }
 
 .headline-banner-img {
@@ -328,22 +335,6 @@ footer .line {
     color: #ffffff;
 }
 
-.article {
-    position: relative;
-    min-height: min-content;
-
-}
-
-.article-img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform .25s;
-}
-
-
-
 /* contact */
 
 #contact {
@@ -366,7 +357,6 @@ footer .line {
 
 #contact .form-control {
     border-radius: 0;
-
 }
 
 #contact .form-control:focus {
@@ -414,27 +404,8 @@ footer .line {
     transform: rotate(45deg);
 }
 
-/* carousel --- the overlay is not working */
-.carousel {
-    max-width: fit-content;
-    height: 630px;
-}
 
-.carousel-item {
-   
-    height: 630px;
-    
-}
 
-.carousel-item .overlay {
-    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457));
-}
-.carousel-caption {
-    align-items: center;
-    padding-bottom: 200px;
-    line-height: 70px;
-
-}
 
 /* join us */
 
@@ -568,13 +539,48 @@ footer .line {
       .hero-text-2 h1 {
         font-size: 4rem;
       }
+      .action-section {
+        position: relative;
+        height: 500px;
+        margin-bottom: 50px;
+      }
+      
+      .action-featured-img {
+        position: relative;
+        background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457)), url(../images/ouractions/FEMINISMEVENT.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+        display: block;
+    }
 
-      /* posts and filters */
+    .action-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: var(--c-light);
+      }
+      
+      .action-text h1 {
+        font-size: 4rem;
+      }
+    
+      .action-text h1 {
+        font-size: 4rem;
+      }
+    
       .actionpost {
         border-color: #1e1e1e;
         text-align: center;
         margin: 10px;
       }
+
+    
+
+      /*filters */
+  
 
       .filter {
         float: left;
@@ -603,39 +609,6 @@ footer .line {
         border-color: var(--c-dark);
         color: var(--c-light);
     }
-        
-    .action-post {
-        position: relative;
-        height: 500px;
-        margin-bottom: 50px;
-      }
-    
-      .action-image {
-        background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457)), url(../images/ouractions/FEMINISMEVENT.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100%;
-      }
-      
-      .action-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: var(--c-light);
-      }
-      
-      .action-text h1 {
-        font-size: 4rem;
-      }
-    
-      .action-text h1 {
-        font-size: 4rem;
-      }
-
-      /* featured posts on homepage */
-
 
       /* progressbar */
 
@@ -874,7 +847,55 @@ footer .line {
         background-size: cover;
         box-sizing: inherit;
       }
-
+    
    li {
     text-decoration: none;
    }
+
+
+   /* ----------------LINKED PAGES---------------------- */
+
+
+  .action-1-img {
+    box-sizing: inherit;
+    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.457));
+    background-position: center;
+    background-size: cover;
+    
+  }
+
+  .social-icons-page a{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--c-dark);
+    border-radius: 100px;
+    color: #ffffff;
+  }
+  .social-icons-page a:hover {
+    background-color: #bf0000;
+    color: #ffffff;
+}
+
+  .news-1 {
+
+  }
+
+  .news-2 {
+
+  }
+  .news-3 {
+    
+  }
+  .event-1 {
+
+  }
+
+  .event-2 {
+
+  }
+  .event-3 {
+    
+  }
