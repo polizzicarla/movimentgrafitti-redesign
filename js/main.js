@@ -89,3 +89,46 @@ function validateForm() {
   if (!isValidCVV(cvv)) {
     displayErrorMessage("Please enter a valid CVV");
   }
+
+  // Validate contact page
+
+  function validateForm() {
+    var name = document.getElementById("name").value;
+    var surname = document.getElementById("surname").value;
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+    
+    var errorElement = document.getElementById("error");
+    errorElement.innerHTML = ""; // Clear previous error messages
+    
+    if (name === "") {
+      errorElement.innerHTML += "First name is required.<br>";
+    }
+    
+    if (surname === "") {
+      errorElement.innerHTML += "Second name is required.<br>";
+    }
+    
+    if (email === "") {
+      errorElement.innerHTML += "Email is required.<br>";
+    } else if (!validateEmail(email)) {
+      errorElement.innerHTML += "Invalid email format.<br>";
+    }
+    
+    if (subject === "") {
+      errorElement.innerHTML += "Subject is required.<br>";
+    }
+    
+    if (message === "") {
+      errorElement.innerHTML += "Message is required.<br>";
+    }
+    
+    return errorElement.innerHTML === ""; // Return false to prevent form submission if there are errors
+  }
+  
+  function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+  }
+  

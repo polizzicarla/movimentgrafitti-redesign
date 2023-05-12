@@ -85,31 +85,32 @@
       </div>
     
     <div class="col-lg-7">
-      <form action="#" class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
+      <form action="#" class="row g-3 p-lg-5 p-4 bg-white theme-shadow" onsubmit="return validateForm()">
         <div class="form-group col-lg-12">
           <label for="name">First Name</label>
-          <input type="text" class="form-control" placeholder="Enter your first name">
+          <input type="text" class="form-control" id="name" placeholder="Enter your first name" required>
         </div>
         <div class="form-group col-lg-12">
           <label for="surname">Second Name</label>
-          <input type="text" class="form-control" placeholder="Enter your second name">
+          <input type="text" class="form-control" id="surname" placeholder="Enter your second name" required>
         </div>
         <div class="form-group col-lg-12">
           <label for="email">Email</label>
-          <input type="email" class="form-control" placeholder="Enter your e-mail address">
+          <input type="email" class="form-control" id="email" placeholder="Enter your e-mail address" required>
         </div>
         <div class="form-group col-lg-12">
           <label for="subject">Subject</label>
-          <input type="text" class="form-control" placeholder="Enter subject">
+          <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
         </div>
         <div class="form-group col-lg-12">
           <label for="message">Enter Message</label>
-          <textarea name="message" id="" cols="" rows="5" class="form-control" placeholder="Enter message"></textarea>
+          <textarea name="message" id="message" cols="" rows="5" class="form-control" placeholder="Enter message" required></textarea>
         </div>
         <div class="form-group col-lg-12 d-grid">
-         <button type="submit" class="btn btn-imp">Send Message</button>
+          <button type="submit" class="btn btn-imp">Send Message</button>
         </div>
       </form>
+      
 
     </div>
 
